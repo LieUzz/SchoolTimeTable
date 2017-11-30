@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#EEEEE0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/shift_timeTable"
+                android:clickable="true"
+                android:textColor="#1E90FF"
+                android:textSize="25dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="课表"
+                />
+
+            <TextView
+
+                android:text="考试倒计时"
+                android:textSize="25dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#1E90FF"
+                android:clickable="true"
+                android:gravity="right"
+                android:id="@+id/exam_add"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="+"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ADADAD"/>
+
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#1E90FF"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#1E90FF"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/exam_ing"
+                android:clickable="true"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="备考中"/>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#1E90FF"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/exam_over"
+                android:clickable="true"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="已结束"/>
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#1E90FF"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#1E90FF"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BFBFBF"/>
+
+        <FrameLayout
+            android:id="@+id/exam_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/swift_course"
+                android:clickable="true"
+                android:background="@drawable/timetable"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/swift_school"
+                android:clickable="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/school"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/swift_my"
+                android:clickable="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/my"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
